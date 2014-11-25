@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView android:id="@+id/pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cual es la capital de Paraguay?"
+        android:layout_centerInParent="true" />
+    
+    <TextView android:id="@+id/respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="--------- "/>
+    
+    <Button android:id="@+id/enviarPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/respuesta"
+        android:layout_marginTop="10dp"
+        android:text="Respuesta"/>
+
+</RelativeLayout>
